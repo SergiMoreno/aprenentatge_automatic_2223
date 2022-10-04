@@ -42,21 +42,23 @@ class Adaline:
         self.w_ = np.zeros(1 + X.shape[1])
         self.cost_ = []
 
-
-        # Per cada iteració actualitzam un cop els pesos
-        # TODO: Put your code here!
-        for _ in range(self.n_iter):
-            errors = (y - self.net_output(X))
-            self.w_[1:] += self.eta * np.dot(errors, X)  # actualitzacio dels pesos
-            self.w_[0] += self.eta * np.sum(errors)  # actualitzacio del bias
-            cost = np.sum(errors**2) / 2.0
+        for i in range(self.n_iter):
+            output = self.net_input(X)
+            errors = (y - output)
+            self.w_[1:] += self.eta * X.T.dot(errors)
+            self.w_[0]  += self.eta * errors.sum()
+            cost = (errors**2).sum() / 2.0
             self.cost_.append(cost)
         return self
 
-    def net_output(self, X):
-        """Calculate net output"""
+    def net_input(self, X):
+        """Calculate net input"""
         return np.dot(X, self.w_[1:]) + self.w_[0]
+
+    def activation(self, X):
+        """Compute linear activation"""
+        return self.net_input(X)
 
     def predict(self, X):
         """Return class label after unit step"""
-        return np.where(self.net_output(X) >= 0.0, 1, -1)
+        return np.where(self.activation(X) >= 0.0, 1, -1)
