@@ -1,3 +1,5 @@
+Template: [bmalcover/aprenentatge_automatic_2223](bmalcover/aprenentatge_automatic_2223)
+
 # Material de l'assignatura d'aprenentatge automàtic
 
 En aquest repositori trobareu el material de la part pràctica de l'assignatura
