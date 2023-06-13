@@ -1,4 +1,4 @@
-Template: [bmalcover/aprenentatge_automatic_2223](bmalcover/aprenentatge_automatic_2223)
+Template: [bmalcover/aprenentatge_automatic_2223](https://github.com/bmalcover/aprenentatge_automatic_2223)
 
 # Material de l'assignatura d'aprenentatge automàtic
 
