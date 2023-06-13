@@ -1,15 +1,14 @@
 Template: [bmalcover/aprenentatge_automatic_2223](https://github.com/bmalcover/aprenentatge_automatic_2223)
 
-# Material de l'assignatura d'aprenentatge automàtic
+# Machine Learning materials
 
-En aquest repositori trobareu el material de la part pràctica de l'assignatura
-d'Aprenentatge Automàtic per al curs 2022-2023.
+Machine learning techniques implemented using Python for the Machine Learning university subject
 
-Durant aquest curs treballarem amb les següents tecnologíes:
+Technologies that have been used:
 
-    - Python (3.7 o superior)
+    - Python (v3.9)
     - Jupyter
-    - Una combinació de: Numpy + Scikit + Matplotlib
-    - Pandas (potser que sigui necessari en algún cas concret)
-    - TensorFlow o Pytorch.
+    -  Numpy + Scikit + Matplotlib
+    - Pandas
+    - TensorFlow/Pytorch.
 
